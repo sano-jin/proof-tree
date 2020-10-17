@@ -18,15 +18,30 @@ body {
     display: block;
     position: absolute;
     right: -2em;
-    bottom: 1.5em;
+    bottom: -0.5em;
     color: pink;
 }
 
 .proof-tree-consequent {
     display: block;
     color: darkblue;
+    display: inline-block;
 }
 
 .proof-tree-antecedents {
+/*
     border-bottom: 1px solid blue;
+*/
+    position: relative;
+
+}
+
+.proof-tree-bar {
+    height: 1px;
+    width: 100%;
+
+    background: darkblue;
+    position: absolute;
+    bottom: 1.5em;
+    left: 0;
 }
