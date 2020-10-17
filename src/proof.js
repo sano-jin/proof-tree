@@ -61,6 +61,7 @@ const getNode = ( json ) => {
 	const antecedentsDiv = createDiv( "proof-tree-antecedents" );
 	json.antecedents
 	    .map( getNode )
+	    .flatMap(e => [createDiv( "proof-tree-padding" ), e]).slice(1)
 	    .map( aDiv => antecedentsDiv.appendChild( aDiv ) );
 	const bar = createDiv( "proof-tree-bar" );
 	bar.appendChild( createTextDiv ( json.rule, "proof-tree-rule" ) );
@@ -109,11 +110,11 @@ const setBarAndRule = ( node ) => {
 	const left = antecedents.firstChild.lastChild;
 	const right = antecedents.lastChild.lastChild;
 	const leftOffset = Math.min( left.offsetLeft, consequent.offsetLeft );
-	bar.style.left = leftOffset + 10 + "px";
+	bar.style.left = leftOffset - 10 + "px";
 	const rightOffset = Math.max( antecedents.lastChild.offsetLeft + right.offsetLeft + right.offsetWidth,
 				      consequent.offsetLeft + consequent.offsetWidth );
 	const width = rightOffset - leftOffset;
-	bar.style.width = width + "px";	
+	bar.style.width = width + 20 + "px";	
     }
 }
 
