@@ -2,7 +2,7 @@
 window.addEventListener('DOMContentLoaded', ( event ) => {
     const yourDOMElement = document.getElementById( "proof-tree" );
 
-    /* Rendering the proof tree MUST done AFTER all style sheets (for styling the proof tree) are loaded */
+    /* Rendering the proof tree MUST be done AFTER all style sheets (for styling the proof tree) are loaded */
     yourDOMElement.onclick = ( event ) =>
 	renderProofTree( event.target, yourJSON ); 
 });
