@@ -8,10 +8,25 @@ Draws proof tree according to given JSON file.
 1. Customize it!
    - Dont't touch `proofTree.js` and `proofTree.css`.
    - Customize `index.html`, `yourScript.js` and `yourStyle.css`
-     - Basically, it draws the given proof tree to the given DOM element.
+     - Basically, it just draws the given proof tree to the given DOM element.
+
+## renderProofTree function
+The only function you will use is the `renderProofTree`.
+Here is the code from `yourScript.js`.
+
+```javascript
+window.addEventListener('DOMContentLoaded', ( event ) => {
+    const yourDOMElement = document.getElementById( "proof-tree" ); // <- custamize here
+    renderProofTree( yourDOMElement, yourJSON );
+});
+
+const yourJSON =
+      { /* Here comes yourJSONFile */ }
+
+```
 
 ## JSON format
-The proof tree must be given with json file.
+The proof tree must be given with the JSON file.
 Here is the format.
 
 ```
@@ -26,6 +41,7 @@ Here is the format.
 }
 ```
 Have a look at `yourScript.js` file for more example.
+
 
 
 

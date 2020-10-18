@@ -1,10 +1,10 @@
 "use strict";
 window.addEventListener('DOMContentLoaded', ( event ) => {
-    const selectedDiv = document.getElementById( "proof-tree" ); // <- custamize here
-    renderProofTree( selectedDiv, proofTreeJson );
+    const yourDOMElement = document.getElementById( "proof-tree" ); // <- custamize here
+    renderProofTree( yourDOMElement, yourJSON );
 });
 
-const proofTreeJson =
+const yourJSON =
       {'consequent': "hoge1",
        'rule': "num", 
        "antecedents": [
