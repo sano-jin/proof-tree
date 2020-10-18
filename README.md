@@ -8,7 +8,7 @@ Draws proof tree according to given JSON file.
 1. Customize it!
    - Dont't touch `proofTree.js` and `proofTree.css`.
    - Customize `index.html`, `yourScript.js` and `yourStyle.css`
-     - Basically, it will draw the given proof tree to the given DOM element.
+     - Basically, it draws the given proof tree to the given DOM element.
 
 ## JSON format
 The proof tree must be given with json file.
