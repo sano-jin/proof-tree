@@ -30,7 +30,7 @@
 .--proof-tree-bar {
     height: 1px;
     width: calc(100% + 20px);
-    background: #111;
+    background: #444;
     position: absolute;
     bottom: 1.5em;
     left: -10px;

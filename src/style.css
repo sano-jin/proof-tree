@@ -1,10 +1,11 @@
 body {
     margin: 40px;
+    color: #444;
 }
 
 #proof-tree {
     margin: 0 30px;
-    background: yellow;
+    background: #9ff;
     font-size: 30px;
     font-family: 'Reenie Beanie', cursive;
 }
