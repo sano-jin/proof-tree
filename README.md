@@ -1,6 +1,8 @@
 # proof-tree
 
-Draws proof tree according to given JSON file.
+Draws the proof tree according to given JSON file.
+
+![Image of the proof tree](proof-tree-img.png)
 
 # How to use
 1. just copy files in src ( or clone this repository )
