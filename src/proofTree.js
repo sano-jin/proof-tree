@@ -32,7 +32,7 @@ const createTextDiv = ( str, className ) => {
 const getNode = ( json ) => { 
     const nodeDiv = createDiv( "--proof-tree-node" );
     const consequentDiv = createTextDiv( json.consequent, "--proof-tree-consequent" );
-    if ( json.rule ) {
+    if ( json.rule !== undefined ) {
 	const antecedentsDiv = createDiv( "--proof-tree-antecedents" );
 	json.antecedents
 	    .map( getNode )

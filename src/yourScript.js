@@ -23,7 +23,7 @@ const proofTreeJson =
 	    'rule': "num",
 	    "antecedents": [
 		{'consequent': "hoge7",
-		 'rule': "num", 
+		 'rule': "", 
 		 "antecedents": [
 		     {'consequent': "hoge2", 
 		      'rule': "num", 

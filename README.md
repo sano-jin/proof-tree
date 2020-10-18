@@ -15,11 +15,11 @@ Here is the format.
 
 ```
 {'consequent': "Here comes the consequent",
- 'rule': "Here is the rule to derive the consequent",
+ 'rule': "Here is the rule neme to derive the consequent. Give an empty string if you dont't want to show the name",
  'antecedents': [ // Here comes the antecendents. you MUST give an empty list even this is an axiom if you gave a rule name.
     {'consequent': "Hypothesis" } // If you ommit the rule, then it won't show the horizontal bar (and antecedents) on the consequent.
     {'consequent': "Axiom",
-     'rule': "" // If you want the bar to be drawn, you must give a rule name. If you dont't want to show the name, just give an empty string.
+     'rule': "" // If you want the bar to be drawn, you MUST give a rule name. If you dont't want to show the name, just give an empty string.
      'antecedents': []
      }
 }
