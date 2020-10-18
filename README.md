@@ -13,7 +13,7 @@ Draws proof tree according to given JSON file.
 The proof tree must be given with json file.
 Here is the format.
 
-```json
+```
 {'consequent': "Here comes the consequent",
  'rule': "Here is the rule to derive the consequent",
  'antecedents': [ // Here comes the antecendents. you MUST give an empty list even this is an axiom if you gave a rule name.
