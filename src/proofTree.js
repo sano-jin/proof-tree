@@ -8,8 +8,7 @@ const renderProofTree = ( div, json ) => {
     const wrapperDiv = createDiv( "--proof-tree-wrapper" );
     const root = wrapperDiv.appendChild( getNode( json ) )
     div.appendChild( wrapperDiv );
-    document.fonts.ready.then( redrawBars( root ) );
-
+    redrawBars( root );
 }
 
 /* Some helper functions */
@@ -28,7 +27,7 @@ const createTextDiv = ( str, className ) => {
 /* Gets the Nodes of the proof tree.
  * This can be done at any time.
  * However the bar and the rule name will not fit compactly.
- * Therefore must call redrawBars after this.
+ * Therefore you must call redrawBars after this.
 */
 const getNode = ( json ) => { 
     const nodeDiv = createDiv( "--proof-tree-node" );
