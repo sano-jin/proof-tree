@@ -1,60 +1,48 @@
 body {
- /*
-   background: yellow;
-*/
-
     margin: 40px;
 }
 
-
 #proof-tree {
+    margin: 0 30px;
+    background: yellow;
+    font-size: 30px;
+    font-family: 'Reenie Beanie', cursive;
+}
+    
+
+.--proof-tree-wrapper {
     overflow-x: scroll;
     white-space: nowrap;
     padding: 1.5em 10px 0;
 }
 
-.proof-tree-node {
+.--proof-tree-node {
     text-align: center;
-    font-size: 1em;
     display: inline-block;
     position: relative;
-    margin: 0 0 10px;
+    margin: 0 0 0.75em;
 }
 
-.proof-tree-padding {
+.--proof-tree-padding {
     display: inline-block;
     width: 4em;
     height: 1em;
 }
     
-
-.proof-tree-rule {
-    display: block;
+.--proof-tree-rule {
     position: absolute;
     right: -2em;
     bottom: -0.5em;
-    color: pink;
 }
 
-.proof-tree-consequent {
-    display: block;
-    color: darkblue;
+.--proof-tree-consequent {
     display: inline-block;
 }
 
-.proof-tree-antecedents {
-/*
-    border-bottom: 1px solid blue;
-*/
-    position: relative;
-
-}
-
-.proof-tree-bar {
+.--proof-tree-bar {
     height: 1px;
     width: calc(100% + 20px);
-
-    background: darkblue;
+    background: #111;
     position: absolute;
     bottom: 1.5em;
     left: -10px;
