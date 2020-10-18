@@ -4,8 +4,10 @@ body {
 }
 
 #proof-tree {
-    margin: 0 30px;
+    margin: 0 auto;
+/*
     background: #9ff;
+*/
     font-size: 30px;
     font-family: 'Reenie Beanie', cursive;
 }

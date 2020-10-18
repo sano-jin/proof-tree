@@ -2,6 +2,7 @@
     overflow-x: scroll;
     white-space: nowrap;
     padding: 1.5em 10px 0;
+    display: block;
 }
 
 .--proof-tree-node {
