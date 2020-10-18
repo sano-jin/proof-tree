@@ -6,10 +6,10 @@ Draws the proof tree according to the given JSON file.
 
 # How to use
 1. just copy files in src ( or clone this repository )
-   - there should be `index.html`, `yourScript.js`, `yourStyle.css`, `proofTree.js` and `proofTree.css`.
+   - there should be `yourHtml.html`, `yourScript.js`, `yourStyle.css`, `proofTree.js` and `proofTree.css`.
 1. Customize it!
    - Dont't touch `proofTree.js` and `proofTree.css`.
-   - Customize `index.html`, `yourScript.js` and `yourStyle.css`
+   - Customize `yourHtml.html`, `yourScript.js` and `yourStyle.css`
      - Basically, it just draws the given proof tree to the given DOM element.
 
 ## renderProofTree function
