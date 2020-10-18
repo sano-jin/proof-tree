@@ -8,7 +8,8 @@ const renderProofTree = ( div, json ) => {
     const wrapperDiv = createDiv( "--proof-tree-wrapper" );
     const root = wrapperDiv.appendChild( getNode( json ) )
     div.appendChild( wrapperDiv );
-    redrawBars( root );
+    document.fonts.ready.then( redrawBars( root ) );
+
 }
 
 /* Some helper functions */
@@ -49,30 +50,29 @@ const getNode = ( json ) => {
 }
 
 /* Redraw bars and rule names.
- * This process MUST be done AFTER css is applied (so it is adding the window.onload property),
+ * This process MUST be done AFTER css is applied,
  * since it is calculating the size of the text.
 */
 const redrawBars = ( root ) => {
-    window.addEventListener("load", () => {
-	console.log( "load finished" );
-	const treeWalker = document.createTreeWalker(
-	    root,
-	    NodeFilter.SHOW_ELEMENT,
-	    { acceptNode: ( node ) => {
-		if ( node.classList.contains( "--proof-tree-node" ) )
-		    return NodeFilter.FILTER_ACCEPT;
-		else
-		    return NodeFilter.FILTER_SKIP;
-	    }},
-	    false
-	);
-	
-	let currentNode = treeWalker.currentNode;
-	while( currentNode ) {
-	    setBar( currentNode );
-	    currentNode = treeWalker.nextNode();
-	}
-    });
+    console.log( "page loading MUST be finished before starting this" );
+    
+    const treeWalker = document.createTreeWalker(
+	root,
+	NodeFilter.SHOW_ELEMENT,
+	{ acceptNode: ( node ) => {
+	    if ( node.classList.contains( "--proof-tree-node" ) )
+		return NodeFilter.FILTER_ACCEPT;
+	    else
+		return NodeFilter.FILTER_SKIP;
+	}},
+	false
+    );
+    
+    let currentNode = treeWalker.currentNode;
+    while( currentNode ) {
+	setBar( currentNode );
+	currentNode = treeWalker.nextNode();
+    }
 }
 
 /* Redraw bar (and the rule).

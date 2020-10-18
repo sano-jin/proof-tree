@@ -1,7 +1,10 @@
 "use strict";
 window.addEventListener('DOMContentLoaded', ( event ) => {
-    const yourDOMElement = document.getElementById( "proof-tree" ); // <- custamize here
-    renderProofTree( yourDOMElement, yourJSON );
+    const yourDOMElement = document.getElementById( "proof-tree" );
+
+    /* Rendering the proof tree MUST done AFTER all style sheets (for styling the proof tree) are loaded */
+    yourDOMElement.onclick = ( event ) =>
+	renderProofTree( event.target, yourJSON ); 
 });
 
 const yourJSON =
