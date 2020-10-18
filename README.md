@@ -42,7 +42,7 @@ Here is the format.
      }
 }
 ```
-Have a look at `yourScript.js` file for more example.
+Have a look at `yourScript.js` file for more examples.
 
 
 
