@@ -33,7 +33,7 @@ const yourJSON =
 ### JSON format
 The proof tree must be given with the following JSON format.
 
-```
+```javascript
 {'consequent': "Here comes the consequent",
  'rule': "Here is the rule to derive the consequent. Give an empty string if you dont't want to show the name",
  'antecedents': [ // Here comes the list of antecendents. you MUST give an empty list even there is no antecedents if you gave a rule name.
